@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Face expression recognition</title>
+        <link rel="stylesheet" href="./static/style.css" MEDIA="all">
+        <style>
+    
+          html{
+            background: url(static/bg3.jpg) no-repeat center center fixed ;
+            background-color:midnightblue;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+            
+          }
+        </style>
+      </head>
+
+<body>
+
+  <header class="primary-header container group">
+    
+    <h1 class="logo">
+      <a href="https://gitam.edu/">
+          <img alt="GITAM" src="./static/logo.png" width="120" height="120" border-radius="50%" >
+      </a>
+     </h1>
+
+     <h3 class="tagline">BANGALORE KARNATAKA</h3>
+
+     <nav class="primary-nav">
+      <a href="http://192.168.0.16:5001/">Home</a>
+      <a href="https://www.gitam.edu/about">About Us</a>
+      <a href="https://www.gitam.edu/help-desk/view/bengaluru">Contact</a>
+  </nav>  
+     <br>
+     <h1 style="color:#dceaf6; text-align:center;position:relative; right:60px;
+     text-shadow: 4px 4px rgb(27, 3, 3);font-family:Cambria;">Emotion Detection Through facial Expressions</h1>
+     
+    </header>
+
+     <h2 style="font-size: 25px; font-weight: 100; text-align: center; color: rgb(187, 238, 251); " >Upload an image or video from your 
+      <br>system to detect emotion.</h2>
+      <br>
+    <form enctype = "multipart/form-data" action="upload" method = "post" style="font-size: 30px; font-weight: 100; 
+    text-align: left; padding-left: 550px; text-shadow: 0.5px 0.5px rgb(140, 119, 119);">
+      <label for="file" style="color:rgb(183, 165, 165); text-align:left;">Select a file:</label><br><br>
+
+      <input type="file" id="file" name="file" accept="video/*,image/*" style="font-size: 14px; font-weight: 100; text-align: center;"><br><br>
+      <input type="submit">
+    <h1></h1>
+    </form>
+
+   <footer class="primary-footer container group"style="padding-top: 300px;">
+    <small>&copy; 2022 Medha</small>
+    <nav class="nav">
+      <a href="https://www.facebook.com/gitamdeemeduniversity"><img src="./static/fb.png" alt="Facebook" style="width:39px;height:39px; margin-right:15px;"></a>
+      <a href="https://www.instagram.com/gitamdeemeduniversity/"><img src="./static/insta.jpg" alt="Instagram" style="border-radius:50%;width:39px;height:39px;margin-right:15px;"></a>
+      <a href="https://twitter.com/GITAMUniversity"><img src="./static/twitter.png" alt="Twitter" style="width:39px;height:39px;"></a>
+  
+    </nav>
+</footer>
+
+</body>
+</html>

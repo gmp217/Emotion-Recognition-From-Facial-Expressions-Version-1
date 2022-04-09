@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./static/style.css" MEDIA="all">
+    <title>Face expression recognition</title>
+    
+    <style>
+      .bg {
+        width: 270px;
+        border: 1px solid black;
+      }
+
+      html{
+        background: url(static/bg2.jpg) no-repeat center center fixed ;
+        background-color:midnightblue;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript">
+
+    function myFunction() {
+      location.replace("http://192.168.0.16:5000/")
+    }
+
+    function remove()
+    {
+      $(document).ready( function () {
+      $('#Btn').click( function(){
+      // url of the data that is to be delete
+      var ajxReq = $.ajax( 'http://time.jsontest.com', {
+      type : 'DELETE'
+      });
+        });
+      });
+    }
+
+  </script>
+
+  </head>
+  <body>
+    <header class="primary-header container group">
+    
+      <h1 class="logo">
+        <a href="https://gitam.edu/">
+            <img alt="GITAM" src="./static/logo.png" width="120" height="120" border-radius="50%" >
+        </a>
+       </h1>
+
+       <h3 class="tagline">BANGALORE KARNATAKA</h3>
+
+       <nav class="primary-nav">
+           <a href="http://192.168.0.16:5001/">Home</a>
+           <a href="https://www.gitam.edu/about">About Us</a>
+           <a href="https://www.gitam.edu/help-desk/view/bengaluru">Contact</a>
+       </nav> 
+       <br>
+       <h1 style="color:#dceaf6; text-align:center;position:relative; right:60px;
+        text-shadow: 4px 4px rgb(27, 3, 3);font-family:Cambria;">Emotion Detection Through facial Expressions</h1>
+
+        <img id="bg" width=700px height=500px src="{{ url_for('video_feed')}}">
+       </header>
+
+      
+      <!---<a href="javascript:if(confirm('Close window?'))window.close()">close</a>-->
+       <!---     <button onclick='myFun()'>Home</button>
+      <a href="http://192.168.0.16:5000/">Home</a>-->
+
+      <footer class="primary-footer container group"style="padding-top:1px;">
+        <!---<button onclick="myFunction();remove();">Try New</button>-->
+        <button class="button"> <a href="http://192.168.189.31:5001/">Try new</a></button>
+
+        <small>&copy; 2022 Medha</small>
+        <nav class="nav">
+          <a href="https://www.facebook.com/gitamdeemeduniversity"><img src="./static/fb.png" alt="Facebook" style="width:32px;height:32px; margin-right:15px;top:10px;"></a>
+          <a href="https://www.instagram.com/gitamdeemeduniversity/"><img src="./static/insta.jpg" alt="Instagram" style="border-radius:50%;width:32px;height:32px;margin-right:15px;"></a>
+          <a href="https://twitter.com/GITAMUniversity"><img src="./static/twitter.png" alt="Twitter" style="width:32px;height:32px;"></a>
+      
+        </nav>
+    </footer>
+
+   </body>
+</html>

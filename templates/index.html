@@ -1,0 +1,118 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+    
+    <title>Face expression recognition</title>
+    
+    <?PHP
+          echo shell_exec("python script.py");
+          ?>
+    <link rel="stylesheet" href="./static/style.css" MEDIA="all">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript">
+      
+      $(document).ready(function(){
+	    $('.mymultiplediv').mouseover(function() {
+  		  myvar = this.id;
+  		  $("div.mydiv").hide();
+   		  $('#div'+myvar).show();
+	      });
+      });
+      
+      </script>
+      
+  </head>
+  <body>
+    <header class="primary-header container group">
+    
+      <h1 class="logo">
+        <a href="https://gitam.edu/">
+            <img alt="GITAM" src="./static/logo.png" width="120" height="120" border-radius="50%" >
+        </a>
+       </h1>
+
+       <h3 class="tagline">BANGALORE KARNATAKA</h3>
+
+       <nav class="primary-nav">
+        <a href="http://192.168.0.16:5001/">Home</a>
+        <a href="https://www.gitam.edu/about">About Us</a>
+        <a href="https://www.gitam.edu/help-desk/view/bengaluru">Contact</a>
+    </nav> 
+       <br>
+       <h1 style="color:#dceaf6; text-align:center;position:relative; right:60px;
+       text-shadow: 4px 4px rgb(27, 3, 3);font-family:Cambria;">Emotion Detection Through facial Expressions</h1>
+       </header>
+
+       <div class="row">
+
+        <div class="column" >
+          <br><br><br><br>
+          <h2 style="color:#f3a2f3c1;text-align: left; font-weight: 600;
+          font-size:35px; font-family: Times New Roman,Times, serif;">Basic Emotions</h2>
+
+      <div class="text-center">
+        <ul class="list-inline" >
+        <li><a href="#" class="mymultiplediv" id="one">Angry</a></li>
+        <li><a href="#" class="mymultiplediv" id="two">Disgust</a></li>
+        <li><a href="#" class="mymultiplediv" id="three">Fear</a></li>
+        <li><a href="#" class="mymultiplediv" id="four">Happy</a></li>
+        <li><a href="#" class="mymultiplediv" id="five">Neutral</a></li>
+        <li><a href="#" class="mymultiplediv" id="six">Sad</a></li>
+        <li><a href="#" class="mymultiplediv" id="seven">Suprise</a></li>
+      </ul>
+      
+    </div>
+    </div>
+
+        <div class="column" >
+          <br><br>
+          <div class="mydiv" id="divone"><img src="/static/angry.png" alt="angry" width="270" height="260" class="img-responsive img-thumbnail"/><span>Angry</span></div>
+          <div class="mydiv" id="divtwo"><img src="/static/disgust.png" alt="disgust"  width="270" height="260" class="img-responsive img-thumbnail"/><span>disgust</span></div>
+          <div class="mydiv" id="divthree"><img src="/static/fear.png" alt="fear" width="270" height="260" class="img-responsive img-thumbnail"/><span>Fear</span></div>
+          <div class="mydiv" id="divfour"><img src="/static/happy.jpg" alt="happy" width="270" height="260"  class="img-responsive img-thumbnail"/><span>Happy</span></div>
+          <div class="mydiv" id="divfive"><img src="/static/neutral.jpg" alt="neutral"  class="img-responsive img-thumbnail"/><span>Neutral</span></div>
+          <div class="mydiv" id="divsix"><img src="/static/sad.png" alt="sad" width="270" height="260" class="img-responsive img-thumbnail"/><span>Sad</span></div>
+          <div class="mydiv" id="divseven"><img src="/static/suprise.png" alt="suprise" width="270" height="260" class="img-responsive img-thumbnail"/><span>Suprise</span></div>
+
+          
+          <h3 style="text-align:center;position:fixed; bottom:110px; font-size:30px; 
+          text-shadow: 4px 4px rgb(27, 3, 3);left:650px" >Try Out Detecting Emotions</h3>
+         
+         <p  style="text-align:center;position:fixed; bottom:60px; 
+         left:600px; font-size:25px;color:#B0C4DE; text-shadow: 3px 3px rgb(27, 3, 3);">Click below to upload your image or video</p>
+
+          <a href="insert.html"  style="text-align:center;position:fixed; bottom:30px; 
+          left:740px; font-size:25px;color:#B0C4DE; text-shadow: 3px 3px rgb(27, 3, 3);">User Input</a>
+    
+          </p>
+        </form>
+        
+        </div>
+        
+        <div class="column" style="color:#B0C4DE; text-align:left ">
+          <br><br><h2 style="color:#f3a2f3c1;font-family:Cambria;font-size: 20px;">WHY IS EMOTION RECOGNITION IMPORTANT?</h2>
+          <p>Emotions can get in the way or get you on the way.
+          <br>Inevitably feelings play an important role  no only in our relations with other peo-ple but  
+          also  in  the  way we  use  computers. Affective computing  is  a  domain that focuses on user emotions  
+          while  he  interacts with computers  and  applications.  As emotional state of a person may influence concentration, 
+          task solving and decision making skills, affective computing vision is to make systems able to recognize and influence  
+          human  emotions  in  order to  enhance  productivity and  effectiveness of working with computers. </p>
+         <h2 style="font-family:Cambria;font-size: 20px;color:#ffffff">Try detecting emotions with your system.</h2>
+         
+    </div>
+  </div>  
+  <br><br><br><br><br><br><br>
+   <!--<a href="javascript:if(confirm('Close window?'))window.close()">close</a>-->
+
+   <footer class="primary-footer container group">
+    <small>&copy; 2022 Medha</small>
+    <nav class="nav">
+      <a href="https://www.facebook.com/gitamdeemeduniversity"><img src="./static/fb.png" alt="Facebook" style="width:39px;height:39px; margin-right:15px;"></a>
+      <a href="https://www.instagram.com/gitamdeemeduniversity/"><img src="./static/insta.jpg" alt="Instagram" style="border-radius:50%;width:39px;height:39px;margin-right:15px;"></a>
+      <a href="https://twitter.com/GITAMUniversity"><img src="./static/twitter.png" alt="Twitter" style="width:39px;height:39px;"></a>
+  
+    </nav>
+</footer>
+
+  </body>
+</html>
