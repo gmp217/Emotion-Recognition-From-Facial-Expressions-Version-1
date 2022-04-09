@@ -1,0 +1,248 @@
+html {
+    background: url(bg1.jpg) no-repeat center center fixed;
+    background-color:midnightblue;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+  h3{
+    color: white;
+  }
+
+
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+
+body{
+    
+    color: rgb(0, 0, 0);
+    font: 300 16px/22px "Lato","Open Sans", "Helvetica Neve", Helvetica,Arial, sans-serif;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 10%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+      
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.grid,
+.container{
+    margin: 0 auto;
+    width: 1200px;
+   
+}
+
+.container{
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+.group:before,
+.group:after{
+    content:"";
+    display: table;
+}
+
+.group:after{
+    clear: both;
+}
+
+.group{
+    clear: both;
+    *zoom: 1;
+}
+
+h1, h2, h3, h5, p{
+  margin-bottom: 22px;
+}
+
+h1{
+  font-size: 36px;
+  line-height: 44px;
+  color: rgb(20, 15, 29);
+  font-weight: 600;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    color: #a9b2b9
+}
+
+p a{
+    border-bottom: 1px solid #000000;
+}
+em{
+    font-style: italic;
+}
+.logo{
+    padding: 30px 0 25px 0;
+    float: left;
+    font-size: 20px;
+    line-height: 44px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    left: 20px;
+}
+
+.tagline{
+    margin: 66px 0 20px 0;
+    text-align: right;
+}
+
+.primary-nav{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    color: #7d787d;
+}
+
+.primary-header a,
+.primary-headera{
+    color: #c0b6c0;
+}
+
+.primary-header a:hover,
+.primary-header a:hover{
+    color: #c8c6a5;
+}
+
+.primary-footer{
+    color: #7d787d;
+    font-size: 14px;
+    padding: 50px 0 15px 0;
+}
+
+.primary-footer small{
+    float: left;
+    font-weight: 400;
+    
+}
+
+nav{
+    text-align: right;
+    
+   
+}
+
+
+.teaser a:hover h3{
+    color: #a9b2b9;
+}
+
+.mymultiplediv{
+	cursor:pointer;
+    text-align:center;
+    
+  }
+.mymultiplediv{
+	width: 80px;
+    margin: 5px;
+    color: #a1e1f3;    
+    font-weight: 500;
+    font-size:25px;
+    line-height: 1.5em; 
+    margin-bottom: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+.list-inline{
+    line-height: 37px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.mydiv{
+	display:none;
+  	padding:10px;
+  	text-align:center;
+    
+}
+.mydiv img{
+  margin: 0 auto;
+  width:"80px"; 
+  height:"80px";
+  
+}
+.mydiv span{
+	text-align: center;
+    background: #ffdede;
+    padding: 6px 10px;
+    display: block;
+    width: 100px;
+    border: 1px solid #d47c7c;
+    margin: 8px auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .button {
+    background-color: #d3dbd3;
+    border: none;
+    color: #0ca7ca;
+    padding: 8px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:7px;
+  }
+
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(36, 36, 200);
+  color: white;
+  }
